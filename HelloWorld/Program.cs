@@ -11,13 +11,19 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             HelloWorld();
+            GoodByeWorld();
 
-            Console.WriteLine();
+            Console.ReadLine();
         }
 
         static void HelloWorld()
         {
             Console.WriteLine("Hello World");
+        }
+
+        static void GoodByeWorld()
+        {
+            Console.WriteLine("Goodbye World");
         }
     }
 }
