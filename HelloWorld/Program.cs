@@ -14,6 +14,7 @@ namespace HelloWorld
 
             HelloWorld();
             GoodByeWorld();
+            BrB();
 
             Console.ReadLine();
         }
@@ -26,6 +27,11 @@ namespace HelloWorld
         static void GoodByeWorld()
         {
             Console.WriteLine("Goodbye World {0}", DateTime.Now.ToShortTimeString());
+        }
+
+        static void BrB()
+        {
+            Console.WriteLine("Be right back!");
         }
     }
 }
