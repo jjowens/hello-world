@@ -10,6 +10,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(DateTime.Now.ToUKDate());
+
             HelloWorld();
             GoodByeWorld();
 
@@ -18,12 +20,12 @@ namespace HelloWorld
 
         static void HelloWorld()
         {
-            Console.WriteLine("Hello World");
+            Console.WriteLine("Hello World {0}", DateTime.Now.ToShortTimeString());
         }
 
         static void GoodByeWorld()
         {
-            Console.WriteLine("Goodbye World");
+            Console.WriteLine("Goodbye World {0}", DateTime.Now.ToShortTimeString());
         }
     }
 }
