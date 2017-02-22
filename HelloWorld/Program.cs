@@ -31,7 +31,8 @@ namespace HelloWorld
 
         static void BrB()
         {
-            Console.WriteLine("Be right back!");
+            DateTime now = DateTime.Now.AddMinutes(5);
+            Console.WriteLine("Be right back at {0}", now.ToShortTimeString());
         }
     }
 }
